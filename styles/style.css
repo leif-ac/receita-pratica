@@ -1,3 +1,5 @@
+@color-merge : #5f2703
+
 :root {
   font-family: 'Alice', serif;
   line-height: 150%;
@@ -8,7 +10,10 @@ body {
   background-image: url('../assets/bg-image.png');
   background-size: cover;
 }
-body #page {
+body main {
+  padding: 24px;
+}
+body main #page {
   background: #F0E8C2;
   border-radius: 24px;
   box-sizing: border-box;
@@ -16,17 +21,21 @@ body #page {
   padding: 24px;
   width: 800px;
 }
-body #page h1,
-body #page h2 {
+body main #page h1,
+body main #page h2 {
   color: #291B1A;
 }
-body #page h1 {
+body main #page h1 {
   line-height: 140%;
   font-size: 40px;
+  margin-bottom: 4px;
 }
-body #page h2 {
+body main #page h2 {
   font-size: 24px;
 }
-body #page img {
+body main #page #image img {
   border-radius: 16px;
+}
+body main #page #about p + p {
+  margin-top: 12px;
 }
