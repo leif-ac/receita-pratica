@@ -4,56 +4,72 @@
 @text-color-on-bg: #F0E8C2;
 @text-color-primary: #291B1A;
 @text-color-secondary: #573A37;
-@color-merge: #5f2703
+@color-merge: #5f2703;
+
+* {
+    margin: 0px;
+}
 
 :root {
-    font-family: 'Alice', serif;
+    font-family: Alice, serif;
+    font-size: 16px;
     line-height: 150%;
     color: @text-color-secondary;
 }
 
 body {
-    background-color: #5f2703; // Cor mescla
-    background-image: url('../assets/bg-image.png');
+    background-color: @color-merge;
+    background-image: url(../assets/bg-image.png);
     background-size: cover;
 
     main {
-        padding: 24px;
-
         #page {
-            background: @surface-color;
-            border-radius: 24px;
+            background-color: @surface-color;
             box-sizing: border-box;
-            margin: 48px auto;
-            padding: 24px;
             width: 800px;
-    
-            h1, h2 {
-                color: @text-color-primary;
-            }
-    
+            padding: 24px;
+            margin: 48px auto;
+            border-radius: 24px;
+
             h1 {
-                line-height: 140%;
-                font-size: 40px;
-                margin-bottom: 4px;
-            }
     
+                font-size: 40px;
+            }
+
             h2 {
                 font-size: 24px;
             }
 
-            #image {
-                img { 
-                    border-radius: 16px;
-                }
+            h1, h2 {
+                color: @text-color-primary;
+                margin-bottom: 4px;
+                line-height: 150%;
             }
 
-            #about {
-                p + p {
-                    margin-top: 12px;
-                }
+            img {
+                border-radius: 16px;
+                width: 752px;
             }
-    
+
+            #content {
+                margin-top: 24px;
+
+                p + p {
+                    margin-top: 12px
+                }
+
+                section + section {
+                    margin-top: 24px;
+                }
+
+                #about {}
+                #ingredients {
+                    ul {
+                        padding-left: 24px;
+                    }
+                }
+                #preparation {}
+            }
         }
     }
 }
