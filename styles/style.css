@@ -3,7 +3,7 @@
 }
 :root {
   font-family: Alice, serif;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 150%;
   color: #573A37;
 }
@@ -47,4 +47,9 @@ body main #page #content section + section {
 }
 body main #page #content #ingredients ul {
   padding-left: 24px;
+}
+body footer {
+  color: #F0E8C2;
+  text-align: center;
+  padding-bottom: 48px;
 }
