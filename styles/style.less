@@ -1,17 +1,41 @@
+// Paleta de Cores
+@background-color: #573824;
+@surface-color: #F0E8C2;
+@text-color-on-bg: #F0E8C2;
+@text-color-primary: #291B1A;
+@text-color-secondary: #573A37;
+
+:root {
+    font-family: 'Alice', serif;
+    line-height: 150%;
+    color: @text-color-secondary;
+}
+
 body {
-    background-color: #5f2703;
+    background-color: #5f2703; // Cor mescla
     background-image: url('../assets/bg-image.png');
     background-size: cover;
 
     #page {
-        background: #F0E8C2;
+        background: @surface-color;
         border-radius: 24px;
         box-sizing: border-box;
-        height: 1440px;
         margin: 48px auto;
         padding: 24px;
         width: 800px;
 
+        h1, h2 {
+            color: @text-color-primary;
+        }
+
+        h1 {
+            line-height: 140%;
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
 
         img { 
             border-radius: 16px;
