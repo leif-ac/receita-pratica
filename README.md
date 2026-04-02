@@ -3,4 +3,5 @@ Repositório para prática. Uma página de receitas.
 
 Utilizando HTML e LESS.
 
-<img width="947" height="893" alt="image" src="https://github.com/user-attachments/assets/545935e5-c1fd-408b-ac08-ac588499e4ab" />
+<img width="824" height="528" alt="image" src="https://github.com/user-attachments/assets/77b3a31b-3517-4d8a-b671-4a1f9d203cb7" />
+
